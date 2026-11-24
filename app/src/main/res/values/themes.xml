@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Tema base My Retail -->
+    <style name="Base.Theme.Javier_Parada_HERPM1305_23"
+        parent="Theme.Material3.Light.NoActionBar">
+
+        <!-- Identidad corporativa -->
+        <item name="colorPrimary">@color/myretail_navy</item>
+        <item name="colorSecondary">@color/myretail_orange</item>
+        <item name="colorTertiary">@color/myretail_gold</item>
+
+        <!-- Fondo y superficies -->
+        <item name="android:colorBackground">@color/background_main</item>
+        <item name="colorSurface">@color/background_card</item>
+
+        <!-- Colores de texto -->
+        <item name="colorOnPrimary">@color/text_primary</item>
+        <item name="colorOnSecondary">@color/text_dark</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+
+        <!-- Barra de estado y navegación -->
+        <item name="android:statusBarColor">@color/myretail_navy</item>
+        <item name="android:navigationBarColor">@color/myretail_navy</item>
+
+        <!-- Iconos claros en las barras del sistema -->
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+
+    </style>
+
+    <!-- Tema utilizado por la aplicación -->
+    <style name="Theme.Javier_Parada_HERPM1305_23"
+        parent="Base.Theme.Javier_Parada_HERPM1305_23" />
+
+</resources>

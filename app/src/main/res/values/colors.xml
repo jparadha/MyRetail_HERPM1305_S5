@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Identidad corporativa My Retail -->
+    <color name="myretail_navy">#14243B</color>
+    <color name="myretail_orange">#F58220</color>
+    <color name="myretail_gold">#E7B84B</color>
+
+    <!-- Fondos y superficies -->
+    <color name="background_main">#14243B</color>
+    <color name="background_card">#20344F</color>
+    <color name="background_secondary">#2B405C</color>
+
+    <!-- Textos -->
+    <color name="text_primary">#F7F8FA</color>
+    <color name="text_secondary">#B8C4D4</color>
+    <color name="text_dark">#14243B</color>
+
+    <!-- Estados y elementos -->
+    <color name="accent">#F58220</color>
+    <color name="success">#4CAF50</color>
+    <color name="divider">#43546B</color>
+
+</resources>
