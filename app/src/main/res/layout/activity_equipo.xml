@@ -1,10 +1,346 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_main"
     tools:context=".EquipoActivity">
+
+    <ScrollView
+        android:id="@+id/scrollEquipo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:id="@+id/equipoContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- CABECERA -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🛍️ MY RETAIL"
+                android:textColor="@color/text_primary"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.05"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"/>
+
+            <!-- TITULO -->
+            <TextView
+                android:id="@+id/txtTituloEquipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nuestro equipo estrella"
+                android:textColor="@color/myretail_orange"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="24dp"/>
+
+            <!-- SUBTITULO -->
+            <TextView
+                android:id="@+id/txtSubtituloEquipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reconocemos el talento y dedicación de nuestros vendedores"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- FILA 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- VENDEDOR 1 -->
+                <LinearLayout
+                    android:id="@+id/cardAndres"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="6dp"
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="@color/background_card">
+
+                    <TextView
+                        android:id="@+id/imgAndres"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="👨🏻‍💼"
+                        android:textSize="64sp"/>
+
+                    <TextView
+                        android:id="@+id/txtAndres"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Andrés Torres"
+                        android:textColor="@color/text_primary"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Electrónica"
+                        android:textColor="@color/myretail_gold"
+                        android:textSize="13sp"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"/>
+                </LinearLayout>
+
+                <!-- VENDEDORA 2 -->
+                <LinearLayout
+                    android:id="@+id/cardCamila"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="6dp"
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="@color/background_card">
+
+                    <TextView
+                        android:id="@+id/imgCamila"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="👩🏼"
+                        android:textSize="64sp"/>
+
+                    <TextView
+                        android:id="@+id/txtCamila"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Camila Rojas"
+                        android:textColor="@color/text_primary"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hogar y Decoración"
+                        android:textColor="@color/myretail_gold"
+                        android:textSize="13sp"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- FILA 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- VENDEDORA 3 -->
+                <LinearLayout
+                    android:id="@+id/cardValentina"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="6dp"
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="@color/background_card">
+
+                    <TextView
+                        android:id="@+id/imgValentina"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="👩🏻‍💻"
+                        android:textSize="64sp"/>
+
+                    <TextView
+                        android:id="@+id/txtValentina"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Valentina Díaz"
+                        android:textColor="@color/text_primary"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Deportes"
+                        android:textColor="@color/myretail_gold"
+                        android:textSize="13sp"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"/>
+                </LinearLayout>
+
+                <!-- VENDEDOR 4 -->
+                <LinearLayout
+                    android:id="@+id/cardFelipe"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="6dp"
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="@color/background_card">
+
+                    <TextView
+                        android:id="@+id/imgFelipe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="👨🏻"
+                        android:textSize="64sp"/>
+
+                    <TextView
+                        android:id="@+id/txtFelipe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Felipe Morales"
+                        android:textColor="@color/text_primary"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vestuario"
+                        android:textColor="@color/myretail_gold"
+                        android:textSize="13sp"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- FILA 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- VENDEDOR 5 -->
+                <LinearLayout
+                    android:id="@+id/cardDiego"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="6dp"
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="@color/background_card">
+
+                    <TextView
+                        android:id="@+id/imgDiego"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="👨🏽‍🦱"
+                        android:textSize="64sp"/>
+
+                    <TextView
+                        android:id="@+id/txtDiego"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Diego Aguirre"
+                        android:textColor="@color/text_primary"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tecnología"
+                        android:textColor="@color/myretail_gold"
+                        android:textSize="13sp"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"/>
+                </LinearLayout>
+
+                <!-- VENDEDORA 6 -->
+                <LinearLayout
+                    android:id="@+id/cardCarla"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="6dp"
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="@color/background_card">
+
+                    <TextView
+                        android:id="@+id/imgCarla"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="👩🏾"
+                        android:textSize="64sp"/>
+
+                    <TextView
+                        android:id="@+id/txtCarla"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Carla Mendoza"
+                        android:textColor="@color/text_primary"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Accesorios"
+                        android:textColor="@color/myretail_gold"
+                        android:textSize="13sp"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- PIE -->
+            <TextView
+                android:id="@+id/txtFooterEquipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="★  EL TALENTO HACE LA DIFERENCIA  ★"
+                android:textColor="@color/myretail_orange"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"/>
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
