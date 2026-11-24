@@ -1,4 +1,3 @@
-
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -69,7 +68,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <!-- VENDEDOR 1 -->
+                <!-- VENDEDOR 1: ANDRÉS -->
                 <LinearLayout
                     android:id="@+id/cardAndres"
                     android:layout_width="0dp"
@@ -81,12 +80,13 @@
                     android:orientation="vertical"
                     android:background="@color/background_card">
 
-                    <TextView
+                    <ImageView
                         android:id="@+id/imgAndres"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="👨🏻‍💼"
-                        android:textSize="64sp"/>
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:src="@drawable/avatar_andres"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Avatar de Andrés Torres"/>
 
                     <TextView
                         android:id="@+id/txtAndres"
@@ -109,7 +109,7 @@
                         android:layout_marginTop="4dp"/>
                 </LinearLayout>
 
-                <!-- VENDEDORA 2 -->
+                <!-- VENDEDORA 2: CAMILA -->
                 <LinearLayout
                     android:id="@+id/cardCamila"
                     android:layout_width="0dp"
@@ -121,12 +121,13 @@
                     android:orientation="vertical"
                     android:background="@color/background_card">
 
-                    <TextView
+                    <ImageView
                         android:id="@+id/imgCamila"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="👩🏼"
-                        android:textSize="64sp"/>
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:src="@drawable/avatar_camila"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Avatar de Camila Rojas"/>
 
                     <TextView
                         android:id="@+id/txtCamila"
@@ -157,7 +158,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <!-- VENDEDORA 3 -->
+                <!-- VENDEDORA 3: VALENTINA -->
                 <LinearLayout
                     android:id="@+id/cardValentina"
                     android:layout_width="0dp"
@@ -169,12 +170,13 @@
                     android:orientation="vertical"
                     android:background="@color/background_card">
 
-                    <TextView
+                    <ImageView
                         android:id="@+id/imgValentina"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="👩🏻‍💻"
-                        android:textSize="64sp"/>
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:src="@drawable/avatar_valentina"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Avatar de Valentina Díaz"/>
 
                     <TextView
                         android:id="@+id/txtValentina"
@@ -197,7 +199,7 @@
                         android:layout_marginTop="4dp"/>
                 </LinearLayout>
 
-                <!-- VENDEDOR 4 -->
+                <!-- VENDEDOR 4: FELIPE -->
                 <LinearLayout
                     android:id="@+id/cardFelipe"
                     android:layout_width="0dp"
@@ -209,12 +211,13 @@
                     android:orientation="vertical"
                     android:background="@color/background_card">
 
-                    <TextView
+                    <ImageView
                         android:id="@+id/imgFelipe"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="👨🏻"
-                        android:textSize="64sp"/>
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:src="@drawable/avatar_felipe"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Avatar de Felipe Morales"/>
 
                     <TextView
                         android:id="@+id/txtFelipe"
@@ -245,7 +248,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <!-- VENDEDOR 5 -->
+                <!-- VENDEDOR 5: DIEGO -->
                 <LinearLayout
                     android:id="@+id/cardDiego"
                     android:layout_width="0dp"
@@ -257,12 +260,13 @@
                     android:orientation="vertical"
                     android:background="@color/background_card">
 
-                    <TextView
+                    <ImageView
                         android:id="@+id/imgDiego"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="👨🏽‍🦱"
-                        android:textSize="64sp"/>
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:src="@drawable/avatar_diego"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Avatar de Diego Aguirre"/>
 
                     <TextView
                         android:id="@+id/txtDiego"
@@ -285,7 +289,7 @@
                         android:layout_marginTop="4dp"/>
                 </LinearLayout>
 
-                <!-- VENDEDORA 6 -->
+                <!-- VENDEDORA 6: CARLA -->
                 <LinearLayout
                     android:id="@+id/cardCarla"
                     android:layout_width="0dp"
@@ -297,12 +301,13 @@
                     android:orientation="vertical"
                     android:background="@color/background_card">
 
-                    <TextView
+                    <ImageView
                         android:id="@+id/imgCarla"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="👩🏾"
-                        android:textSize="64sp"/>
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:src="@drawable/avatar_carla"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Avatar de Carla Mendoza"/>
 
                     <TextView
                         android:id="@+id/txtCarla"
